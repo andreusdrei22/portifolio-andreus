@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfólio de Andreus Vinícius - Perfil</title>
+    <link rel="stylesheet" href="styles/styles.css">
+    <script>
+        function showYearSection(year) {
+            document.querySelectorAll('.year-section').forEach(section => section.style.display = 'none');
+            document.getElementById(`section-${year}`).style.display = 'block';
+            document.querySelectorAll('.nav a').forEach(link => link.classList.remove('active'));
+            document.getElementById(`link-${year}`).classList.add('active');
+        }
+    </script>
+</head>
+<body>
+
+    <!-- Cabeçalho do Perfil -->
+    <div class="header">
+        <div class="profile-header">
+            <img src="pics/Andreus.jpg" alt="Foto de Andreus Vinícius" class="profile-picture">
+            <div class="profile-info">
+                <h1>Andreus Vinícius</h1>
+                <p>@AndreusViníciusAraaújoDeAndrade</p>
+                <p>3º DS-AMS Fatec</p>
+            </div>
+        </div>
+        <div class="profile-stats">
+            <p>2022</p>
+            <p>-</p>
+            <p>2024</p>
+        </div>
+    </div>
+
+    <!-- Barra de navegação com os anos -->
+    <div class="nav">
+        <a href="#2022" id="link-2022" onclick="showYearSection('2022')" class="active">2022</a>
+        <a href="#2023" id="link-2023" onclick="showYearSection('2023')">2023</a>
+        <a href="#2024" id="link-2024" onclick="showYearSection('2024')">2024</a>
+    </div>
+
+    <div class="content">
+        <!-- Conteúdo do ano de 2022 -->
+        <div id="section-2022" class="year-section">
+            <h2>ACP's de 2022</h2>
+            <!-- 5 eventos para o ano de 2022 -->
+            <div class="post">
+                <p><strong>25/03/2022:</strong> Neste dia ocorreu uma reunião com representantes das empresas Eduzz e Uno. Durante o encontro, foi apresentado o cronograma anual da Ptech, destacando as principais atividades e dinâmicas planejadas para o ano, voltadas para o desenvolvimento da nossa turma.</p>
+                <img src="pics/P-tech-25-03-2022.jpeg" alt="Imagem dia 25/03/2022">
+            </div>
+            <div class="post">
+                <p><strong>19/04/2022:</strong> Realizamos uma reunião com representantes das empresas Eduzz, Uno e Tegra para debater o tema "Conduta Ética". O encontro proporcionou um espaço para compartilharmos nossas visões sobre ética empresarial, promovendo uma discussão produtiva sobre os valores que guiam nossas práticas e decisões no ambiente corporativo.</p>
+               
+            </div>
+            <div class="post">
+                <p><strong>13/05/2022:</strong> Em 13 de maio, houve um encontro com representantes das empresas Eduzz e Uno. Durante o evento, foram entregues brindes relacionados a uma reunião anterior, que não foi registrada oficialmente, onde os cinco melhores alunos de uma atividade foram premiados com um brinde de cada empresa.</p>
+                <img src="pics/p-tech-13-05.jpg" alt="Imagem dia 13/05/2022">
+            </div>
+            <div class="post">
+                <p><strong>30/09/2022:</strong> Em 30 de setembro de 2022, ocorreu uma reunião com a participação das empresas Eduzz, Uno e Tegra, na qual foi abordado um tema de grande importância: a empatia, enfatizando seu valor tanto no âmbito pessoal quanto profissional.</p>
+                <img src="pics/p-tech-30-09-22.jpeg" alt="Imagem dia 30/09/2022">
+            </div>
+            <div class="post">
+                <p> Antes da reunião mencionada no primeiro tópico, houve outro encontro em que nos apresentamos às empresas. Falamos sobre nossas experiências com tecnologia, preferências e outros assuntos relevantes.</p>
+            
+            </div>
+        </div>
+
+        <!-- Conteúdo do ano de 2023 -->
+        <div id="section-2023" class="year-section">
+            <h2>ACP's de 2023</h2>
+            <!-- 5 eventos para o ano de 2023 -->
+            <div class="post">
+                <p><strong>27/04/2023:</strong> Houve uma reunião com representantes das empresas Eduzz e Uno.</p>
+                <img src="pics/P-tech-27-04-2023.jpg" alt="Imagem dia 27/04/2023">
+            </div>
+            <div class="post">
+                <p><strong>04/05/2023:</strong> Em 4 de maio de 2023, o proprietário da empresa Itix conduziu uma palestra sobre assuntos relacionados à empresa e sua parceria com o Centro Paula Souza para o AMS.</p>
+                <img src="pics/P-tech-04-05-2023.jpg" alt="Imagem dia 04/05/2023">
+            </div>
+            <div class="post">
+                <p><strong>05/05/2023:</strong> Um representante da empresa Itix conduziu uma palestra que abordou detalhadamente temas relacionados à tecnologia e à inteligência artificial.</p>
+                <img src="pics/P-tech-05-05-2023.jpeg" alt="Imagem dia 05/05/2023">
+            </div>
+            <div class="post">
+                <p><strong>22/09/2023:</strong> Foi realizada uma reunião com a representante de uma das empresas para discutir técnicas e dicas sobre como elaborar um currículo de forma eficaz.</p>
+                <img src="pics/P-tech-2023-09-22.png" alt="Imagem dia 22/09/2023">
+            </div>
+            <div class="post">
+                <p><strong>16/11/2023:</strong> Tivemos um treinamento com um representante da empresa Itix, onde aplicamos o método Scrum em um projeto sobre reciclagem.</p>
+                <img src="pics/P-tech-16-11-2023.jpeg" alt="Imagem dia 16/11/2023">
+            </div>
+        </div>
+
+        <!-- Conteúdo do ano de 2024 -->
+        <div id="section-2024" class="year-section">
+            <h2>ACP's de 2024</h2>
+            <!-- 13 eventos para o ano de 2024 -->
+            <div class="post">
+                <p><strong>08/04/2024:</strong> Participamos de uma palestra com um representante da empresa Itix, cujo tema central foi "Criatividade e Inovação: Um Desafio Constante".</p>
+                <img src="pics/P-tech-08-04-2024.jpeg" alt="Imagem dia 08/04/2024">
+            </div>
+            <div class="post">
+                <p><strong>23/05/2024:</strong> Foi realizada uma palestra na Etec Fernando Prestes, ministrada por Guilherme Bastos, da empresa Tegra. O tema abordado foi "As possibilidades da IA no mercado de trabalho".</p>
+                <img src="pics/P-tech-23-05-2024.jpeg" alt="Imagem dia 23/05/2024">
+            </div>
+            <div class="post">
+                <p><strong>27/05/2024:</strong> A Eduzz organizou uma palestra online ministrada por Victor Palencia, que abordou o tema "Liderança e Gestão 3.0".</p>
+                <img src="pics/P-tech-27-05-2024.jpeg" alt="Imagem dia 25/05/2024">
+            </div>
+            <div class="post">
+                <p><strong>18/06/2024:</strong> 
+                    Tivemos um bate-papo com os estagiários da Itix, das 08h às 10h. Em seguida, assistimos a uma palestra com o tema "Explorando Homelabs: Como criar seu próprio ambiente de desenvolvimento pode transformar sua carreira em TI", ministrada pelo palestrante Edmilson.</p>
+                <img src="pics/P-tech-18-06-2024.jpg" alt="Imagem dia 18/06/2024">
+            </div>
+            <div class="post">
+                <p><strong>31/07/2024:</strong> Assistimos a uma palestra da empresa Eduzz com o tema "Hacker do bem e a segurança digital no dia a dia", ministrada pelo palestrante Luiz Milagres.</p>
+                <img src="pics/P-tech-31-07-2024.jpg" alt="Imagem dia 31/07/2024">
+            </div>
+            <div class="post">
+                <p><strong>28/08/2024:</strong> Assistimos a uma palestra da empresa Eduzz com o tema "Você é uma pessoa organizada?", ministrada pelos palestrantes Vinicius e Michele.</p>
+                <img src="pics/P-tech-28-08-2024.jpeg" alt="Imagem dai 28/08/2024">
+            </div>
+            <div class="post">
+                <p><strong>29/08/2024:</strong> Assistimos a uma palestra da empresa Uno com o tema "Fluxo de Operações Comercial", ministrada pelos palestrantes André Lopes e Tamiris Marciano.</p>
+                <img src="pics/P-tech-29-08-2024.jpeg" alt="Imagem dia 29/08/2024">
+            </div>
+            <div class="post">
+                <p><strong>05/09/2024:</strong> Assistimos a uma palestra da empresa Tegra sobre o tema "Quais as tendências da área de TI com a virada da IA Generativa e outras tecnologias", ministrada pelo palestrante Guilherme Bastos.</p>
+                <img src="pics/P-tech-05-09-2024.jpeg" alt="Imagem dia 05/09/2024">
+            </div>
+            <div class="post">
+                <p><strong>19/09/2024:</strong> Assistimos a uma palestra da empresa Uno com o tema "Ingressando no mercado de Trabalho - Autoconhecimento e Marca Pessoal", ministrada pela palestrante Liliane Pereira.</p>
+                <img src="pics/P-tech-19-09-2024.jpg" alt="Imagem dia 19/09/2024">
+            </div>
+            <div class="post">
+                <p><strong>24/09/2024:</strong> Assistimos a uma palestra da empresa Eduzz com o tema "Capricho: skill cada vez mais raro no mercado", ministrada pelo palestrante Luiz Milagres.</p>
+                <img src="pics/P-tech-24-09-2024.jpeg" alt="Imagem dia 24/09/2024">
+            </div>
+            <div class="post">
+                <p><strong>10/10/2024:</strong> Assistimos a uma palestra da empresa Tegra com o tema "Desenvolvimento Low Code", ministrada pelo palestrante Guilherme Bastos.</p>
+                <img src="pics/P-tech-10-10-2024.jpg" alt="Imagem dia10/10/2024">
+            </div>
+            <div class="post">
+                <p><strong>17/10/2024:</strong> Assistimos a uma palestra da IOCHPE pelo YouTube com o tema "Educação", ministrada pela palestrante Flavia Freitas.</p>
+                <img src="pics/P-tech-17-10-2024.jpg" alt="Imagem dia 17/10/2024">
+            </div>
+
+        </div>
+    </div>
+</body>
+</html>
