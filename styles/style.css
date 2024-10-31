@@ -1,0 +1,132 @@
+/* Fundo Escuro e Cores */
+body {
+    background-color: #15202b;
+    color: #ffffff;
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+.header {
+    background-color: #192734;
+    color: white;
+    padding: 20px;
+    text-align: center;
+    position: relative;
+}
+
+.profile-header {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.profile-picture {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    margin-right: 15px;
+    border: 3px solid #1da1f2; /* Estilo de borda da foto de perfil */
+}
+
+.profile-info h1 {
+    font-size: 20px;
+    margin: 0;
+}
+
+.profile-info p {
+    margin: 4px 0;
+    font-size: 14px;
+    color: #8899a6;
+}
+
+.verify-btn {
+    background: #1da1f2;
+    color: white;
+    border: none;
+    padding: 5px 10px;
+    border-radius: 15px;
+    cursor: pointer;
+    font-size: 12px;
+}
+
+.edit-profile-btn {
+    position: absolute;
+    right: 20px;
+    background-color: #15202b;
+    color: #1da1f2;
+    border: 1px solid #1da1f2;
+    padding: 8px 16px;
+    border-radius: 20px;
+    font-weight: bold;
+}
+
+.profile-stats, .follower-stats {
+    font-size: 14px;
+    display: flex;
+    justify-content: center;
+    color: #8899a6;
+}
+
+.nav {
+    display: flex;
+    justify-content: space-around;
+    background-color: #192734;
+    padding: 10px 0;
+    border-bottom: 1px solid #38444d;
+}
+
+.nav a {
+    color: #1da1f2;
+    text-decoration: none;
+    font-weight: bold;
+    padding: 10px 20px;
+}
+
+.nav a.active {
+    border-bottom: 2px solid #1da1f2;
+}
+
+.content {
+    padding: 20px;
+}
+
+/* Postagens */
+.year-section {
+    display: none;
+}
+
+.year-section:first-child {
+    display: block;
+}
+
+.post {
+    background-color: #192734;
+    padding: 15px;
+    border-radius: 10px;
+    margin-bottom: 20px;
+    border: 1px solid #38444d; /* Borda para separação visual */
+}
+
+.retweet-tag {
+    color: #1da1f2;
+    font-size: 12px;
+    margin-bottom: 5px;
+}
+
+.post p {
+    color: #ffffff;
+    font-size: 14px;
+}
+
+/* Estilos para as imagens dentro dos posts */
+.post img {
+    width: 100%; /* Ajusta a largura para ocupar o máximo dentro do post */
+    max-width: 500px; /* Define um tamanho máximo para evitar imagens muito grandes */
+    height: auto; /* Mantém a proporção da imagem */
+    display: block; /* Centraliza a imagem dentro do post */
+    margin: 10px auto; /* Espaço ao redor da imagem */
+    border-radius: 10px; /* Bordas arredondadas */
+    border: 1px solid #38444d; /* Borda para dar destaque à imagem */
+}
+
